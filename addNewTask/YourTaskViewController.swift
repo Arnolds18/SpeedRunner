@@ -8,22 +8,55 @@
 import UIKit
 
 class YourTaskViewController: UIViewController {
-
+    
+    @IBOutlet var tableView: UITableView!
+    
+    let task = [
+        "Task 1",
+        "Task 2",
+        "Task 3",
+        "Task 4",
+        "Task 5",
+        "Task 6",
+        "Task 7",
+        "Task 8",
+        "Task 9",
+        "Task 10",
+        ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Your Task"
-        // Do any additional setup after loading the view.
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+}
+
+extension YourTaskViewController: UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("You tapped me")
+    }
+}
+
+extension YourTaskViewController: UITableViewDataSource{
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return task.count
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        cell.textLabel?.text = task[indexPath.row]
+        
+        return cell
+        
+    }
 }
