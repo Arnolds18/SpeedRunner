@@ -11,7 +11,7 @@
         <!--Your Task-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="YourTaskViewController" customModule="addNewTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="YourTask" id="BYZ-38-t0r" customClass="YourTaskViewController" customModule="addNewTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,54 +81,75 @@
         <!--New Task-->
         <scene sceneID="p2a-al-dAd">
             <objects>
-                <viewController id="pau-df-xCL" customClass="AddTaskViewController" customModule="addNewTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewTask" id="pau-df-xCL" customClass="AddTaskViewController" customModule="addNewTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vqf-BI-zU0" customClass="ADd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s9O-FC-s2V">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s9O-FC-s2V">
                                 <rect key="frame" x="62" y="146" width="289" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vUI-c5-NER">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vUI-c5-NER">
                                 <rect key="frame" x="63" y="208" width="289" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Deadline :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9d9-4I-gRJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deadline :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9d9-4I-gRJ">
                                 <rect key="frame" x="63" y="287" width="76" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Assignment Difficulty :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDk-jN-BeD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assignment Difficulty :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDk-jN-BeD">
                                 <rect key="frame" x="63" y="511" width="171" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="OxU-XA-GK5">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="OxU-XA-GK5">
                                 <rect key="frame" x="63" y="562" width="290" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="E21-JG-0PH">
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="E21-JG-0PH">
                                 <rect key="frame" x="-106" y="305" width="414" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8ko-bc-nLG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="TDk-jN-BeD" secondAttribute="bottom" constant="364" id="76O-gG-OLX"/>
+                            <constraint firstItem="8ko-bc-nLG" firstAttribute="trailing" secondItem="OxU-XA-GK5" secondAttribute="trailing" constant="63" id="G1z-fm-CXH"/>
+                            <constraint firstItem="9d9-4I-gRJ" firstAttribute="top" secondItem="vUI-c5-NER" secondAttribute="bottom" constant="45" id="IND-SQ-UT4"/>
+                            <constraint firstItem="8ko-bc-nLG" firstAttribute="bottom" secondItem="OxU-XA-GK5" secondAttribute="bottom" constant="271" id="Ick-rf-mLk"/>
+                            <constraint firstItem="TDk-jN-BeD" firstAttribute="top" secondItem="E21-JG-0PH" secondAttribute="bottom" constant="44" id="IiZ-O0-plZ"/>
+                            <constraint firstItem="9d9-4I-gRJ" firstAttribute="top" secondItem="vqf-BI-zU0" secondAttribute="top" constant="287" id="OLY-jL-hxX"/>
+                            <constraint firstItem="9d9-4I-gRJ" firstAttribute="leading" secondItem="8ko-bc-nLG" secondAttribute="leading" constant="63" id="U5H-XU-YfH"/>
+                            <constraint firstItem="OxU-XA-GK5" firstAttribute="leading" secondItem="8ko-bc-nLG" secondAttribute="leading" constant="65" id="Zcj-wQ-5gQ"/>
+                            <constraint firstItem="9d9-4I-gRJ" firstAttribute="leading" secondItem="vUI-c5-NER" secondAttribute="leading" id="f1X-ck-9jL"/>
+                            <constraint firstItem="OxU-XA-GK5" firstAttribute="trailing" secondItem="s9O-FC-s2V" secondAttribute="trailing" id="jYT-3D-U11"/>
+                            <constraint firstItem="9d9-4I-gRJ" firstAttribute="leading" secondItem="TDk-jN-BeD" secondAttribute="leading" id="lPE-Do-kIo"/>
+                            <constraint firstItem="s9O-FC-s2V" firstAttribute="centerX" secondItem="vqf-BI-zU0" secondAttribute="centerX" id="mxU-0z-ECx"/>
+                            <constraint firstItem="s9O-FC-s2V" firstAttribute="top" secondItem="8ko-bc-nLG" secondAttribute="top" constant="58" id="pBF-HH-u4Y"/>
+                            <constraint firstItem="OxU-XA-GK5" firstAttribute="centerX" secondItem="vUI-c5-NER" secondAttribute="centerX" id="raO-DK-PMB"/>
+                            <constraint firstItem="OxU-XA-GK5" firstAttribute="top" secondItem="TDk-jN-BeD" secondAttribute="bottom" constant="30" id="t7J-6o-G0D"/>
+                            <constraint firstItem="9d9-4I-gRJ" firstAttribute="centerX" secondItem="E21-JG-0PH" secondAttribute="centerX" id="uAq-Og-7w4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New Task" id="NDj-dD-9lQ">
                         <barButtonItem key="backBarButtonItem" title="Your Task" id="RYS-xB-nQ6"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="HAI-3W-qxb">
+                            <connections>
+                                <segue destination="UTJ-lV-ZTj" kind="unwind" unwindAction="tapToYourTaskWithUnwindSegue:" id="RT1-6I-X4D"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="UTJ-lV-ZTj" kind="unwind" unwindAction="tapToYourTaskWithUnwindSegue:" id="Nca-x7-Wwr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y9R-GX-SDf" sceneMemberID="firstResponder"/>
+                <exit id="UTJ-lV-ZTj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1694" y="66"/>
         </scene>
