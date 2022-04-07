@@ -140,13 +140,10 @@
                         <barButtonItem key="backBarButtonItem" title="Your Task" id="RYS-xB-nQ6"/>
                         <barButtonItem key="rightBarButtonItem" title="Done" id="HAI-3W-qxb">
                             <connections>
-                                <segue destination="UTJ-lV-ZTj" kind="unwind" unwindAction="tapToYourTaskWithUnwindSegue:" id="RT1-6I-X4D"/>
+                                <segue destination="UTJ-lV-ZTj" kind="unwind" unwindAction="unwind:" id="dZA-9N-fgs"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="UTJ-lV-ZTj" kind="unwind" unwindAction="tapToYourTaskWithUnwindSegue:" id="Nca-x7-Wwr"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y9R-GX-SDf" sceneMemberID="firstResponder"/>
                 <exit id="UTJ-lV-ZTj" userLabel="Exit" sceneMemberID="exit"/>
