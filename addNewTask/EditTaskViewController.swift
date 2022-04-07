@@ -1,25 +1,20 @@
 //
-//  AddTaskViewController.swift
+//  EditTaskViewController.swift
 //  addNewTask
 //
-//  Created by Arnold Sidiprasetija on 05/04/22.
+//  Created by Arnold Sidiprasetija on 07/04/22.
 //
 
 import UIKit
 
-class AddTaskViewController: UIViewController {
-    
-   // @IBAction func tapToYourTask(unwindSegue: UIStoryboardSegue){
-    //    performSegue(withIdentifier: "YourTask", sender: self)
-    //}
-    
+class EditTaskViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "New Task"
-        // Do any additional setup after loading the view.
         
+        title = "Edit Task"
+        // Do any additional setup after loading the view.
     }
-    
 
     /*
     // MARK: - Navigation

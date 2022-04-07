@@ -11,6 +11,7 @@ import UIKit
 class YourTaskViewController: UIViewController {
     
     @IBAction func unwind( _ seg: UIStoryboardSegue) {
+        
     }
 
     @IBOutlet var tableView: UITableView!
@@ -28,6 +29,12 @@ class YourTaskViewController: UIViewController {
         "Task 10",
         ]
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       if segue.identifier == "EditTask" {
+          // perform custom segue operation.
+       }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Your Task"
@@ -40,7 +47,7 @@ class YourTaskViewController: UIViewController {
 extension YourTaskViewController: UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You tapped me")
+    
     }
 }
 
