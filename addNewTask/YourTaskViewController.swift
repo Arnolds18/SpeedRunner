@@ -41,6 +41,9 @@ class YourTaskViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationItem.largeTitleDisplayMode = .automatic
     }
 }
 
