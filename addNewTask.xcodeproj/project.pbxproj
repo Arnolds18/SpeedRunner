@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		411C9DFA27FEC7A300856891 /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C9DF927FEC7A300856891 /* EditTaskViewController.swift */; };
+		416A046E280021A100F5C74E /* PomodoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416A046D280021A100F5C74E /* PomodoroViewController.swift */; };
 		41E5A83127FC38BB005A31E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5A83027FC38BB005A31E7 /* AppDelegate.swift */; };
 		41E5A83327FC38BB005A31E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5A83227FC38BB005A31E7 /* SceneDelegate.swift */; };
 		41E5A83527FC38BB005A31E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5A83427FC38BB005A31E7 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		411C9DF927FEC7A300856891 /* EditTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
+		416A046D280021A100F5C74E /* PomodoroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewController.swift; sourceTree = "<group>"; };
 		41E5A82D27FC38BB005A31E7 /* addNewTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = addNewTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E5A83027FC38BB005A31E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41E5A83227FC38BB005A31E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				41E5A84427FC434C005A31E7 /* YourTaskViewController.swift */,
 				411C9DF927FEC7A300856891 /* EditTaskViewController.swift */,
 				41E5A84627FC435A005A31E7 /* AddTaskViewController.swift */,
+				416A046D280021A100F5C74E /* PomodoroViewController.swift */,
 				41E5A83927FC38BC005A31E7 /* Assets.xcassets */,
 				41E5A83B27FC38BC005A31E7 /* LaunchScreen.storyboard */,
 				41E5A83E27FC38BC005A31E7 /* Info.plist */,
@@ -152,6 +155,7 @@
 				41E5A83527FC38BB005A31E7 /* ViewController.swift in Sources */,
 				41E5A83127FC38BB005A31E7 /* AppDelegate.swift in Sources */,
 				41E5A83327FC38BB005A31E7 /* SceneDelegate.swift in Sources */,
+				416A046E280021A100F5C74E /* PomodoroViewController.swift in Sources */,
 				41E5A84727FC435A005A31E7 /* AddTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

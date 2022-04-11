@@ -200,11 +200,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSR-48-u6W">
-                                <rect key="frame" x="123" y="782" width="159" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Pomodoro"/>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iKc-D5-rii">
                                 <rect key="frame" x="64" y="257" width="289" height="68"/>
                                 <constraints>
@@ -213,6 +208,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSR-48-u6W">
+                                <rect key="frame" x="129" y="782" width="159" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Pomodoro"/>
+                                <connections>
+                                    <segue destination="qzj-21-CMC" kind="show" id="Vjh-Bz-AFR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gny-cL-rjY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -227,11 +231,9 @@
                             <constraint firstItem="Sm6-1c-Ea6" firstAttribute="top" secondItem="9ma-Nc-7o3" secondAttribute="top" constant="170" id="NbS-g5-CLv"/>
                             <constraint firstItem="0fE-mP-UwT" firstAttribute="top" secondItem="rq3-c1-NQy" secondAttribute="bottom" constant="8" symbolic="YES" id="PkS-RY-nqo"/>
                             <constraint firstItem="Ijz-LB-tHF" firstAttribute="baseline" secondItem="GwC-tJ-vkJ" secondAttribute="baseline" id="Uv9-vH-gw2"/>
-                            <constraint firstItem="jSR-48-u6W" firstAttribute="bottom" secondItem="gny-cL-rjY" secondAttribute="bottom" id="gfR-Nv-Zni"/>
                             <constraint firstItem="rq3-c1-NQy" firstAttribute="centerX" secondItem="0fE-mP-UwT" secondAttribute="centerX" id="hPZ-7h-7zA"/>
                             <constraint firstItem="GwC-tJ-vkJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ijz-LB-tHF" secondAttribute="trailing" constant="8" symbolic="YES" id="idd-BW-lOm"/>
                             <constraint firstItem="nfZ-Fl-xe6" firstAttribute="leading" secondItem="9ma-Nc-7o3" secondAttribute="leadingMargin" constant="-20" id="igt-Qj-fmg"/>
-                            <constraint firstItem="jSR-48-u6W" firstAttribute="leading" secondItem="gny-cL-rjY" secondAttribute="leading" constant="145" id="kZs-c9-2jm"/>
                             <constraint firstItem="Ijz-LB-tHF" firstAttribute="top" secondItem="0fE-mP-UwT" secondAttribute="bottom" constant="33" id="lCg-JD-NHz"/>
                             <constraint firstItem="Ijz-LB-tHF" firstAttribute="leading" secondItem="gny-cL-rjY" secondAttribute="leading" constant="65" id="pfq-Qb-ENc"/>
                             <constraint firstItem="gny-cL-rjY" firstAttribute="trailing" secondItem="GwC-tJ-vkJ" secondAttribute="trailing" constant="146" id="rIu-D1-IpZ"/>
@@ -242,7 +244,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="KYa-nu-bCD">
-                        <barButtonItem key="backBarButtonItem" title="Your Task" id="mKn-ys-nhP"/>
+                        <barButtonItem key="backBarButtonItem" title="Cancel" id="mKn-ys-nhP"/>
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="gib-30-vS3">
                             <connections>
                                 <segue destination="t9a-Me-7kK" kind="presentation" id="aI5-Xm-aRm"/>
@@ -253,7 +255,77 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dFV-Fu-A4m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1771.0144927536232" y="814.95535714285711"/>
+            <point key="canvasLocation" x="1738" y="815"/>
+        </scene>
+        <!--Pomodoro-->
+        <scene sceneID="2qn-PA-maJ">
+            <objects>
+                <viewController id="qzj-21-CMC" customClass="PomodoroViewController" customModule="addNewTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oby-mN-UgX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wr3-Nc-bf9">
+                                <rect key="frame" x="160" y="368" width="94" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Play"/>
+                                <connections>
+                                    <action selector="playTapped:" destination="qzj-21-CMC" eventType="touchUpInside" id="OEn-N6-jEg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hz-zk-Fnr">
+                                <rect key="frame" x="160" y="407" width="94" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Pause"/>
+                                <connections>
+                                    <action selector="pauseTapped:" destination="qzj-21-CMC" eventType="touchUpInside" id="VyF-K9-mzR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5W-Aw-ac2">
+                                <rect key="frame" x="160" y="446" width="94" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                                <connections>
+                                    <action selector="resetTapped:" destination="qzj-21-CMC" eventType="touchUpInside" id="TAu-K3-k19"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DA4-nt-beE">
+                                <rect key="frame" x="162" y="221" width="92" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="74"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="minutes left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLH-lG-1hO">
+                                <rect key="frame" x="164" y="301" width="90" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yjO-yI-InK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pomodoro" id="lNK-A1-DY3">
+                        <barButtonItem key="backBarButtonItem" title="Cancel" id="FUB-o1-1pX"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="ipj-GB-XfM">
+                            <connections>
+                                <segue destination="ASN-mp-MBK" kind="unwind" unwindAction="unwind:" id="Uot-BZ-S2L"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="label" destination="DA4-nt-beE" id="yrO-5A-bzs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JKg-0D-MSj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ASN-mp-MBK" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2602.898550724638" y="814.95535714285711"/>
         </scene>
         <!--Edit Task-->
         <scene sceneID="3QC-md-PHO">
@@ -322,7 +394,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Edit Task" id="jYp-lK-8n2">
-                        <barButtonItem key="backBarButtonItem" title="Cancel" id="1vR-x9-iGd"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="1vR-x9-iGd">
+                            <connections>
+                                <segue destination="jVT-0h-zgX" kind="unwind" unwindAction="unwind:" id="5bf-1V-rUz"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Done" id="iqe-ki-6dA">
                             <connections>
                                 <segue destination="jVT-0h-zgX" kind="unwind" unwindAction="unwind:" id="xf3-xP-EvC"/>
@@ -333,7 +409,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="coi-kF-aAe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="jVT-0h-zgX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2742" y="1608"/>
+            <point key="canvasLocation" x="2603" y="1608"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5QP-SO-bXc">
@@ -351,12 +427,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CO8-h3-2Vr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1692.753623188406" y="65.625"/>
+            <point key="canvasLocation" x="1717" y="66"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0Fi-xo-ZUt">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tm1-Q8-f8g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t9a-Me-7kK" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0MH-Iu-JPJ">
@@ -368,15 +443,18 @@
                         <segue destination="cNP-hx-Pd0" kind="relationship" relationship="rootViewController" id="vN5-zY-jbe"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tm1-Q8-f8g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1771" y="1609"/>
+            <point key="canvasLocation" x="1738" y="1608"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uOR-1N-toO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cS9-Ch-PTf" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="5V8-31-Gp5"/>
+                    <navigationItem key="navigationItem" id="5V8-31-Gp5">
+                        <barButtonItem key="backBarButtonItem" title="Cancel" id="G5g-0L-zVF"/>
+                    </navigationItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SBc-un-BVk">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
