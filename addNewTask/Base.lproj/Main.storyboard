@@ -140,7 +140,8 @@
                         <barButtonItem key="backBarButtonItem" title="Your Task" id="eQ5-kB-wBG"/>
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="lJu-8F-3Qc">
                             <connections>
-                                <segue destination="bjr-3Z-J5y" kind="unwind" unwindAction="unwind:" id="th1-Es-tut"/>
+                                <action selector="cancel:" destination="pau-df-xCL" id="8J3-g6-xel"/>
+                                <segue destination="bjr-3Z-J5y" kind="unwind" unwindAction="unwind:" id="REw-E6-cDc"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Done" id="fqX-IY-r17">
@@ -330,7 +331,7 @@
         <!--Edit Task-->
         <scene sceneID="3QC-md-PHO">
             <objects>
-                <viewController id="cNP-hx-Pd0" sceneMemberID="viewController">
+                <viewController id="cNP-hx-Pd0" customClass="EditTaskViewController" customModule="addNewTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tua-oA-9zo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -396,7 +397,7 @@
                     <navigationItem key="navigationItem" title="Edit Task" id="jYp-lK-8n2">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="1vR-x9-iGd">
                             <connections>
-                                <segue destination="jVT-0h-zgX" kind="unwind" unwindAction="unwind:" id="5bf-1V-rUz"/>
+                                <action selector="cancel:" destination="cNP-hx-Pd0" id="T7a-Io-OdD"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Done" id="iqe-ki-6dA">
