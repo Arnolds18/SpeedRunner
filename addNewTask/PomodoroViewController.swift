@@ -11,7 +11,7 @@ class PomodoroViewController: UIViewController {
     
     @IBOutlet weak var label: UILabel!
     
-    var timeRemaining: Int = 25
+    var timeRemaining: Int = 24
     var timer: Timer!
     
     override func viewDidLoad() {
@@ -31,7 +31,7 @@ class PomodoroViewController: UIViewController {
     }
     @IBAction func resetTapped(_ sender: Any) {
         timer.invalidate()
-        timeRemaining = 25
+        timeRemaining = 24
         label.text = "\(timeRemaining)"
     }
     
