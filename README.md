@@ -29,13 +29,13 @@ Speed Runner is Lo-fi App by CBC.
 Here are the screenshots from XCode Simulator
 
 - First view when users open the app
-![Your Task](images/Your Task.png =165.6x358.4)
+![Your Task](images/Your%20Task.png=165.6x358.4)
 
 - Users can add their new task
-![Add New Task](images/Add New Task.png =165.6x358.4)
+![Add New Task](images/Add%20New%20Task.png=165.6x358.4)
 
 - Users can tap their task and see the title or descriptions also they can edit when there is a mistake.
-![Edit Task](images/Edit Task.png  =165.6x358.4)
+![Task Desc](images/Task@%20Desc.png=165.6x358.4)
 
 - Last but not least, the pomodoro method to help users do their task
-![Pomodoro](images/Pomodoro.png  =165.6x358.4)
+![Pomodoro](images/Pomodoro.png=165.6x358.4)
