@@ -6,7 +6,12 @@ that help them to **organize their tasks by listing their existing tasks**,
 then **labeling it with several parameter to determine the priority** and using 
 **the Pomodoro technique** to work on the selected task from the list that has been made before.*
 
+<p align="center">
+  <img src="./images/SpeedRunner.jpg" width="600"/>
+</p>
+
 Speed Runner is Lo-fi App by CBC.
+
 ## Project Members
 
 - [Arnold Sidiprasetija](https://github.com/Arnolds18)
@@ -29,7 +34,7 @@ Speed Runner is Lo-fi App by CBC.
 Here are the screenshots from XCode Simulator
 
 - First view when users open the app
-![Your Task]('images/Your%20Task.png=414x896')
+<img src="./images/Your%20Task.jpg"/>
 
 - Users can add their new task
 ![Add New Task]('images/Add%20New%20Task.png=414x896')
