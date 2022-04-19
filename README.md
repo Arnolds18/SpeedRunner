@@ -1,28 +1,17 @@
-<<<<<<< HEAD
-
 # Speed Runner
 This repository was used for Mini Challenge 1 from the Apple Developer Academy Cohort 2022. My team and I conducted domain research for this project in order to develop an app statement, which was as follows:
 
-=======
-# Speed Runner
-This repository was used for Mini Challenge 1 from the Apple Developer Academy @UC Cohort 2022. My team and I conducted domain research for this project in order to develop an app statement, which was as follows:
-
->>>>>>> d3168eca7a483614acb2d5815fc3eb251db6ac01
 *For **College students**
 that help them to **organize their tasks by listing their existing tasks**, 
 then **labeling it with several parameter to determine the priority** and using 
 **the Pomodoro technique** to work on the selected task from the list that has been made before.*
 
-<<<<<<< HEAD
-Speed Runner is Lo-fi App by CBC.
-=======
 <p align="center">
   <img src="./images/SpeedRunner.jpg" width="600"/>
 </p>
 
 Speed Runner is Lo-fi App by CBC.
 
->>>>>>> d3168eca7a483614acb2d5815fc3eb251db6ac01
 ## Project Members
 
 - [Arnold Sidiprasetija](https://github.com/Arnolds18)
@@ -44,10 +33,6 @@ Speed Runner is Lo-fi App by CBC.
 ## Screenshots
 Here are the screenshots from XCode Simulator
 
-<<<<<<< HEAD
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-=======
 - First view when users open the app
 <img src="./images/YourTask.png" width="207" height="448"/>
 
@@ -59,4 +44,3 @@ Here are the screenshots from XCode Simulator
 
 - Last but not least, the pomodoro method to help users do their task
 <img src="./images/Pomodoro.png" width="207" height="448"/>
->>>>>>> d3168eca7a483614acb2d5815fc3eb251db6ac01
