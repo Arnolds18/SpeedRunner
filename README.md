@@ -1,5 +1,5 @@
 # Speed Runner
-This repository was used for Mini Challenge 1 from the Apple Developer Academy Cohort 2022. My team and I conducted domain research for this project in order to develop an app statement, which was as follows:
+This repository was used for Mini Challenge 1 from the Apple Developer Academy @UC Cohort 2022. My team and I conducted domain research for this project in order to develop an app statement, which was as follows:
 
 *For **College students**
 that help them to **organize their tasks by listing their existing tasks**, 
