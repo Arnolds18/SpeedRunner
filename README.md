@@ -44,3 +44,4 @@ Here are the screenshots from XCode Simulator
 
 - Last but not least, the pomodoro method to help users do their task
 <img src="./images/Pomodoro.png" width="207" height="448"/>
+
